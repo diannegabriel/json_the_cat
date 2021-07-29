@@ -18,8 +18,6 @@ describe('fetchBreedDescription', () => {
 
   it('returns an error when there is an invalid breed', (done) => {
     fetchBreedDescription('Chibi', (err, desc) => {
-      // we expect no error for this scenario
-      // assert.equal(err, err);
       
       const expectedError = "Chibi was not found!";
       
